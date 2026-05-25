@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Success Animation</title>
+
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: #f0f8ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    .message {
+      position: absolute;
+      text-align: center;
+      z-index: 10;
+    }
+
+    .message h1 {
+      color: green;
+      font-size: 40px;
+    }
+
+    .message p {
+      font-size: 20px;
+      color: #333;
+    }
+
+    .confetti {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      top: -20px;
+      animation: fall linear infinite;
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+      }
+
+      100% {
+        transform: translateY(100vh) rotate(720deg);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="message">
+    <h1>🎉 Registration Successful! 🎉</h1>
+    <p>Welcome to our website</p>
+  </div>
+
+  <script>
+    const colors = ["red", "blue", "green", "yellow", "orange", "purple", "pink"];
+
+    for (let i = 0; i < 150; i++) {
+      let confetti = document.createElement("div");
+      confetti.classList.add("confetti");
+
+      confetti.style.left = Math.random() * 100 + "vw";
+      confetti.style.backgroundColor =
+        colors[Math.floor(Math.random() * colors.length)];
+
+      confetti.style.width = Math.random() * 10 + 5 + "px";
+      confetti.style.height = confetti.style.width;
+
+      confetti.style.animationDuration =
+        Math.random() * 3 + 2 + "s";
+
+      confetti.style.animationDelay =
+        Math.random() * 5 + "s";
+
+      document.body.appendChild(confetti);
+    }
+  </script>
+
+</body>
+</html>
