@@ -6,12 +6,13 @@
           body
           {
              font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+             font-family: Georgia, 'Times New Roman', Times, serif;
           }
 
           header
           {
             display: flex;
-            background-color: rgb(235, 210, 201);
+            background-color: rgb(170, 180, 236);
             padding: 20px;
             align-items: center;
             font-family: 'Times New Roman', Times, serif;
@@ -19,16 +20,43 @@
            }
            .heading
            {
-            position: absolute;
+           position: absolute;
              left: 50%;
       transform: translateX(-50%);
+      font-size: 25px;
       text-align: center;
-
+      font-family: 'Times New Roman', Times, serif;
+      color: #0b0101;
+    margin-top: 30px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #00f7ff,
+                 0 0 20px #00f7ff,
+                 0 0 40px #ff00ff,
+                 0 0 60px #ff00ff;
+    animation: glow 2s infinite alternate;
+      
            }
+           @keyframes glow{
+    from{
+        text-shadow: 0 0 10px #00f7ff,
+                     0 0 20px #00f7ff;
+    }
+    to{
+        text-shadow: 0 0 20px #ff00ff,
+                     0 0 40px #ff00ff,
+                     0 0 60px #ff00ff;
+    }
+}
+
+heading:hover{
+    transform: scale(1.1);
+    transition: 0.4s;
+}
            .logo img
            {
-            width: 80px;
-            height: 80px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
            }
           nav
@@ -85,14 +113,14 @@
           padding: 50px;
           text-align: center;
           font-size: 22px;
-          background-color: lightblue;
+          background-color: rgb(246, 181, 225);
          }
         </style>
     </head>
     <body>
       <header>
        <div class="logo">
-        <img src="logo.jpg"></div>
+        <img src="logo1.jpg"></div>
         <div class="heading"><h1>Nature And Its Beauty</h1></div>
       </header>
         <nav>
@@ -136,56 +164,93 @@
     <script>
     function showHome(){
       document.getElementById("display").innerHTML = `
-        <h1>Home</h1>
-        <p>
-      Nature is full of wonders that inspire joy, peace, and relaxation.
-      From green forests and colorful flowers to waterfalls and mountains,
-      every part of nature reflects beauty and harmony.
-      Our website celebrates the beauty of the natural world and encourages
-      everyone to protect and appreciate our environment.</p>
+        
+       <div class="heading"> Welcome to Nature & Its Beauty</div><br><br>
+
+<p>Nature & Beauty Organization is dedicated to protecting the environment and spreading awareness about the beauty of nature. We believe that nature is the heart of life, providing peace, freshness, and happiness to every living being.
+
+Our mission is to inspire people to love and care for the natural world through tree planting programs, environmental campaigns, clean and green activities, and educational events. We work together to create a cleaner, healthier, and greener future for the next generation.
+
+Explore the wonders of forests, mountains, rivers, flowers, wildlife, and natural landscapes with us. Join our organization and become a part of the movement to protect the beauty of our planet.</p>
+<br>
+<h2><mark>Our Activities</mark></h2>
+
+🍀Tree Plantation Programs
+🍀Environmental Awareness Campaigns
+🍀Nature Photography Events
+🍀Clean and Green Projects
+🍀Wildlife Protection Activities
+🍀Eco-Friendly Workshop<br>
+<h2><mark>Our Vision</mark></h2>
+
+<p>🌿“To build a world where nature and humanity live together in harmony.”🍂</p>
+
+<p>Join Us
+
+Together, we can make the Earth more beautiful, peaceful, and sustainable. Let us protect nature today for a better tomorrow.</p>
       `;
     }
     function showAbout(){
       document.getElementById("display").innerHTML = `
-        <h1>About</h1>
-        <p>
-         Nature and its beauty is a organization that has many voulenteers to save our nature.Our 
-         main goal is to protect our environment and beauty of nature.Nowadays we forget what is natural
-         beauty.If you wake up and saw a morning view its the real beauty.
-      </p>
-      <p>
-      The beauty of nature inspires creativity, calmness, and positivity. 
-      Watching a sunrise, listening to birds sing, or walking through a green garden 
-      can refresh the mind and soul.
-    </p>
+        <div class="heading">About Us</div><br><br>
+        
+
+<p>🌿Welcome to Nature & Beauty Organization, a community that celebrates the beauty of nature and works towards protecting the environment for future generations. Our organization was created with the goal of spreading awareness about the importance of nature and encouraging people to live in harmony with the environment.<br>
+
+🌿We believe that nature is one of the greatest gifts to humanity. Forests, rivers, mountains, flowers, animals, and fresh air make our world beautiful and peaceful. Through our activities and programs, we inspire people to care for the Earth and understand the value of preserving natural resources.
+<br>
+🌿Nature & Beauty Organization conducts various environmental activities such as tree planting, cleanliness drives, awareness campaigns, eco-friendly workshops, and wildlife protection programs. We also encourage students and communities to participate in green initiatives that help create a cleaner and healthier environment.
+<br>
+🌿Our dedicated team works with passion and commitment to make society more environmentally responsible. We welcome volunteers, students, and nature lovers to join us in our mission to protect and preserve the beauty of our planet.
+<br>
+<h3><mark>Our Mission<mark></h3>
+
+🍂To protect nature, spread environmental awareness, and encourage sustainable living practices for a greener future.
+<h3><mark>Our Values</mark></h3>
+✨Love and Respect for Nature<br>
+✨Environmental Responsibility<br>
+✨Teamwork and Community Service<br>
+✨Sustainability and Green Living<br>
+✨Education and Awareness<br>
+
+Together, we can make the Earth greener, cleaner, and more beautiful for everyone.
       `;
     }
     function showHistory(){
       document.getElementById("display").innerHTML = `
-        <h1>Histroy</h1>
-        <p>
-          Our organization stands for more then 30 years.We are providing 30 years of service to
-          save our nature.We saved many trees and its seeds which is useful to our next generation.
-          It was founded by K.Gayathri in 1995 and co-founder M.Dharshini.They provide theri lifetime 
-          to this organization.
-        <p>
-    Nature has been an important part of human life since the beginning of civilization.
-    Early humans depended on forests, rivers, mountains, and animals for food, shelter,
-    and survival. Over time, people began to admire the beauty of nature and its peaceful surroundings.
-  </p>
+       <div class="heading">Our History</div><br><br>
 
-  <p>
-    Ancient cultures around the world considered nature sacred and respected the environment.
-    Trees, flowers, rivers, and the sun were often worshipped because they were believed to
-    represent life, strength, and harmony.
-  </p>
+<p>
+Nature & Beauty Organization started with a small group of people who loved nature and wanted to protect the environment. 
+The organization was created to spread awareness about keeping the Earth clean, green, and beautiful.
+</p>
 
-  <p>
-    During the Renaissance period, artists and poets started expressing the beauty of nature
-    through paintings, literature, and music. Landscapes, gardens, and natural scenery became
-    symbols of peace and inspiration.
-  </p>
+<p>
+In the beginning, we organized simple activities like tree planting, cleaning public places, and conducting awareness programs for students and communities.
+</p>
 
+<p>
+As more people joined us, our organization grew stronger and started conducting eco-friendly events, nature programs, and environmental campaigns in different places.
+</p>
+
+<p>
+Today, Nature & Beauty Organization continues to inspire people to protect nature and build a greener future for the next generation.
+</p>
+
+<h2><mark>Our Achievements</mark></h2>
+
+
+    🎗️Tree Plantation Programs
+    🎗️Clean and Green Activities
+    🎗️Environmental Awareness Campaigns
+    🎗️Nature Protection Programs
+
+
+<p>
+Together, we continue our journey to make the world cleaner, healthier, and more beautiful.
+</p> 
+
+  
       `;
     }
     
