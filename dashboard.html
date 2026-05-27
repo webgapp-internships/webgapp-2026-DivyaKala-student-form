@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>dashboard</title>
+        <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <style>
+            body
+            {
+                font-family:Arial;
+            background:#f4f4f4;
+            margin:0;
+            padding:30px;
+            }
+            h1
+            {
+                text-align:left;
+            margin-bottom:40px;
+            color: blue;
+            text-shadow: 0px 0px 15px rgb(202, 232, 241);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+            .btn{
+            background:#2563eb;
+            color:white;
+            padding:12px 20px;
+            border: none;
+            border-radius:10px;
+            font-size:16px;
+            cursor:pointer;
+            box-shadow: 0px 0px 15px black;
+            float: right;
+        }
+            .container
+            {
+                display: flex;
+                gap: 20px;
+                justify-content: center;
+                flex-wrap:wrap;
+            }
+            .box
+            {
+                
+            width:320px;
+            height:130px;
+            background:rgb(17, 91, 240);
+            border-radius:10px;
+            box-shadow:0px 0px 15px black;
+            align-items:center;
+            justify-content:center;
+            
+            color: white;
+            font-weight:bold;
+            text-align: left;
+            }
+            .box1
+            {
+            background:rgb(101, 245, 61);
+            }
+            .box2
+            {
+            background:rgb(249, 73, 9);
+            }
+            .box3
+            {
+            background: orange;
+            }
+            .box12
+            {
+                
+                width:550px;
+            height:130px;
+            background:rgb(17, 91, 240);
+            border-radius:10px;
+            box-shadow:0px 0px 15px black;
+            align-items:center;
+            justify-content:center;
+            
+            color: white;
+            font-weight:bold;
+            text-align: left;
+            
+            }
+            .box4
+            {
+            background: rgb(161, 76, 161);
+            }
+            .box5
+            {
+            background: black;
+            } 
+            .box13
+            {
+                
+            width:550px;
+            height:350px;
+            border-radius:10px;
+            box-shadow:0px 0px 15px black;
+            align-items:center;
+            justify-content:center;
+            
+            color: rgb(9, 8, 8);
+            font-weight:bold;
+            text-align: left;
+            text-indent: 0cqmax;
+            }
+            .box6
+            {
+            background: rgb(238, 233, 238);
+            
+            }
+            .box7
+            {
+            background: rgb(244, 239, 239);
+             width:550px;
+            height:250px;
+            }
+             .line{
+            height:1px;
+            background: lightgrey;
+            margin: 20px auto;
+            width: 500px;
+            
+        }
+
+        </style>
+    </head>
+    <body>
+            <h1>Employee Attendance Dashboard <button class="btn">
+            <i class="fa-solid fa-download"></i> Export Report
+        </button></h1>
+        <div class="container">
+        
+            <div class="box">
+                <p>Total Employees<i class="fa-solid fa-users" style="font-size: 30px;float:right;"></i></p>
+                <h3 style="font-size: 30px;font-family: 'Times New Roman', Times, serif ;">230</h3>
+                
+            </div>
+            <div class="box box1">
+                <p>Present Today<i class="fa-solid fa-circle-check" style="font-size: 30px;float:right;"></i></p>
+                <h3 style="font-size: 30px;font-family: 'Times New Roman', Times, serif;">225</h3>
+            </div>
+            <div class="box box2">
+                <p>Absent Today<i class="fa-solid fa-circle-xmark" style="font-size: 30px;float: right;"></i></p>
+                <h3 style="font-size: 30px;font-family: 'Times New Roman', Times, serif;">5</h3>
+            </div>
+            <div class="box box3">
+                <p>Active Project<i class="fa-solid fa-chart-line" style="font-size: 30px;float: right;"></i></p>
+                <h3 style="font-size: 30px;font-family: 'Times New Roman', Times, serif;">25</h3></div>
+                <div class="box12 box4">
+                <p>Violations Today<i class="fa-solid fa-triangle-exclamation alert" style="font-size: 30px;float: right;"></i></p>
+                <h3 style="font-size: 30px;font-family: 'Times New Roman', Times, serif;">18</h3>
+            </div>
+            <div class="box12 box5">
+                <p>Tasks Due Today<i class="fa-solid fa-list" style="font-size: 30px;float: right;"></i></p>
+                <h3 style="font-size: 30px;font-family: 'Times New Roman', Times, serif;">34</h3>
+        </div>
+        <div class="box13 box6">
+                <p style="font-size: 30px;font-family: 'Times New Roman', Times, serif;"><i class="fa-regular fa-clock" style="font-size: 30px;float: left;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Recent Check-ins Feed</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Gayathri checked in at <span style="color:rgb(40, 142, 176)";>9.00 AM</span><br><div class="line"></div>
+                &nbsp;&nbsp;&nbsp;&nbsp;Divya checked in at <span style="color:rgb(40, 142, 176)";>9.10 AM</span><br><div class="line"></div>
+                &nbsp;&nbsp;&nbsp;&nbsp;Dharshini checked in at <span style="color:rgb(40, 142, 176)";>9.20 AM</span><br><div class="line"></div>
+                &nbsp;&nbsp;&nbsp;&nbsp;Jivitha checked in at <span style="color:rgb(40, 142, 176)";>9.30 AM</span></p>
+        </div>
+        <div class="box13 box7">
+                <p style="font-size: 30px;font-family: 'Times New Roman', Times, serif;color: red;"><i class="fa-solid fa-bell" style="font-size: 30px;color: red;float: left;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Violation Alerts</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Ponraj<span style="color: gray;">&nbsp;late check detected</span><br><div class="line"></div>
+                &nbsp;&nbsp;&nbsp;&nbsp;Prem<span style="color: gray;">&nbsp;geo-fence violations</span></span><br><div class="line"></div>
+                &nbsp;&nbsp;&nbsp;&nbsp;Mukesh<span style="color: gray;">&nbsp;missing check-out</span><br><br>
+                
+        </div>
+        </div>
+        
+    
+    </body>
+</html>
