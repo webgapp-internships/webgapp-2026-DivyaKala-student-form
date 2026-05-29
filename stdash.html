@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+    .header
+    {
+        display: flex;
+        padding: 30px;
+        background-color: rgb(243, 243, 170);
+        border-style: dotted;
+        justify-content: center;
+    }
+    .heading
+    {
+        color: black;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 25px;
+        text-align: center;
+    }
+    .btn
+    {
+            background:#090909;
+            color:white;
+            padding:12px 20px;
+            border: none;
+            border-radius:10px;
+            font-size:16px;
+            cursor:pointer;
+            box-shadow: 0px 0px 15px black;
+            margin-left: 500px;
+
+    }
+    .container{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    padding:40px;
+    flex-wrap:wrap;
+}
+
+.card{
+    display: grid;
+    width:250px;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    cursor:pointer;
+    transition:0.3s;
+    box-shadow: 0px 0px 10px lightblue;
+}
+
+.card:hover{
+    transform:scale(1.05);
+    background:#600546;
+    color:white;
+}
+
+.card h2{
+    margin-bottom:15px;
+}
+
+.number{
+    font-size:35px;
+    font-weight:bold;
+}
+.popup{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+}
+
+.popup-content{
+    background:white;
+    width:70%;
+    margin:80px auto;
+    padding:25px;
+    border-radius:15px;
+    position:relative;
+}
+
+.close{
+    position:absolute;
+    right:20px;
+    top:10px;
+    font-size:30px;
+    cursor:pointer;
+    color:red;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+th{
+    background:#1e3a5f;
+    color:white;
+    padding:12px;
+}
+
+td{
+    padding:10px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+
+tr:hover{
+    background:#f1f1f1;
+}
+
+</style>
+</head>
+<body>
+    <div class="header">
+        <div class="heading">THIAGARAJAR COLLEGE OF ARTS AND SCIENCE</div>
+        <div class="btn"> <i class="fa-solid fa-download"></i>Export Report</div>
+    </div>
+<div class="container">
+
+    <div class="card" onclick="openPopup('bcaPopup')">
+        <h2>Departments</h2>
+        <div class="number">16</div>
+    </div>
+
+    <div class="card" onclick="openPopup('bscPopup')">
+        <h2>Students count</h2>
+        <div class="number">2000</div>
+    </div>
+
+    <div class="card" onclick="openPopup('bcomPopup')">
+        <h2>Percentage</h2>
+        <div class="number">95%</div>
+    </div>
+</div>
+<div class="container">
+    <div class="card" onclick="openPopup('totalPopup')">
+        <h2>Total</h2>
+        <div class="number">6000</div>
+
+    </div>
+    <div class="card" onclick="openPopup('otherPopup')">
+        <h2>Other Programmes</h2>
+        <div class="number">5</div>
+
+    </div>
+</div>
+
+<div class="popup" id="bcaPopup">
+
+    <div class="popup-content">
+
+        <span class="close" onclick="closePopup('bcaPopup')">&times;</span>
+
+        <h2 align="center">Departments</h2>
+
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Staffs</th>
+                <th>Experienced staff</th>
+            </tr>
+
+            <tr>
+                <td>B.Sc.IT</td>
+                <td>5</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                 <td>BCA</td>
+                <td>20</td>
+                <td>15</td>
+            </tr>
+              <tr>
+                 <td>B.A.Tamil</td>
+                <td>30</td>
+                <td>18</td>
+              </tr>  
+              <tr>
+                 <td>B.A.English</td>
+                <td>40</td>
+                <td>38</td>
+              </tr>  
+            
+        </table>
+
+    </div>
+
+</div>
+
+<div class="popup" id="bscPopup">
+
+    <div class="popup-content">
+
+        <span class="close" onclick="closePopup('bscPopup')">&times;</span>
+
+        <h2 align="center">Total Student Records</h2>
+
+        <table>
+            <tr>
+                <th>Department</th>
+                <th>Students count</th>
+            </tr>
+
+            <tr>
+                <td>B.Sc.IT</td>
+                <td>201</td>
+            </tr>
+
+            <tr>
+                <td>BCA</td>
+                <td>302</td>
+            </tr>
+            <tr>
+                <td>B.A.Tamil</td>
+                <td>600</td>
+            </tr>
+            <tr>
+                <td>B.A.English</td>
+                <td>800</td>
+            </tr>
+        </table>
+
+    </div>
+
+</div>
+
+<div class="popup" id="bcomPopup">
+
+    <div class="popup-content">
+
+        <span class="close" onclick="closePopup('bcomPopup')">&times;</span>
+
+        <h2 align="center">Student Percentage</h2>
+
+        <table>
+            <tr>
+                <th>Department</th>
+                <th>Students Percentage</th>
+            </tr>
+
+            <tr>
+                <td>B.Sc.IT</td>
+                <td>80%</td>
+            </tr>
+
+            <tr>
+                <td>BCA</td>
+                <td>85%</td>
+            </tr>
+            <tr>
+                <td>B.A.Tamil</td>
+                <td>90%</td>
+            </tr>
+            <tr>
+                <td>B.A.English</td>
+                <td>93%</td>
+            </tr>
+        </table>
+
+    </div>
+
+</div>
+
+<div class="popup" id="totalPopup">
+
+    <div class="popup-content">
+
+        <span class="close" onclick="closePopup('totalPopup')">&times;</span>
+
+        <h2 align="center">Total</h2>
+
+        <table>
+            <tr>
+                <th>Department count</th>
+                <th>total students</th>
+            </tr>
+
+            <tr>
+                <td>16</td>
+                <td>6000</td>
+            </tr>
+        </table>
+
+    </div>
+
+</div>
+
+<script>
+
+function openPopup(id){
+    document.getElementById(id).style.display = "block";
+}
+
+function closePopup(id){
+    document.getElementById(id).style.display = "none";
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    nav
+    {
+        display: flex;
+        background-color: rgb(2, 2, 57);
+        padding: 5px;
+        
+    }
+    nav a
+    {
+        color: lightgoldenrodyellow;
+        text-wrap: wrap;
+        
+    }
+    nav a:hover
+    {
+        color: yellow;
+        cursor: pointer;
+       
+    }
+    .line
+    {
+    border-left:3px solid white;
+    height:20px;
+    margin:0 20px;
+   }
+   header
+          {
+            display: flex;
+            background-color: rgb(170, 180, 236);
+            padding: 20px;
+            align-items: center;
+            font-family: 'Times New Roman', Times, serif;
+            position: static;
+           }
+           .heading
+           {
+           position: absolute;
+           left: 50%;
+          transform: translateX(-50%);
+          font-size: 25px;
+          text-align: center;
+          font-family: 'Times New Roman', Times, serif;
+          color: #0b0101;
+           }
+            .logo img
+           {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+           }
+
+    .line
+    {
+    border-left:3px solid white;
+    height:20px;
+    margin:0 20px;
+   }
+   .body
+   {
+    display: flex;
+    padding-top: 10px;
+    background-color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+   }
+   .slider{
+    width: 80%;
+    height: 350px;
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgb(10, 10, 10);
+}
+
+.slides{
+    display: flex;
+    width: 300%;
+    animation: slide 9s infinite;
+}
+
+.slides img{
+    width: 100%;
+    height: 350px;
+}
+
+
+@keyframes slide{
+
+    0%{
+        margin-left: 0%;
+    }
+
+    33%{
+        margin-left: 0%;
+    }
+
+    38%{
+        margin-left: -100%;
+    }
+
+    66%{
+        margin-left: -100%;
+    }
+
+    71%{
+        margin-left: -200%;
+    }
+
+    100%{
+        margin-left: -200%;
+    }
+}
+.footer
+{
+    display: flex;
+    padding: 30px;
+    text-align: left;
+    background-color: black;
+    color: white;
+    
+}
+ .bcon
+         {
+          padding: 100px;
+          text-align: center;
+          font-size: 22px;
+          background-color: rgb(246, 181, 225);
+         }
+         .he
+         {
+            position: absolute;
+             left: 50%;
+      transform: translateX(-50%);
+      font-size: 25px;
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+      color: #15095b;
+      text-shadow: 0px 0px 20px black;  
+       margin-top: 0px;    
+         }
+</style>
+<body>
+     <nav>
+        <b><a onclick="showmail()">✉️skcedu@gmail.com</a></b><div class="line"></div>
+        <b><a onclick="shownum()">📞9003304544</a></b><div class="line"></div>
+        <b><a onclick="showloc()">📍Aanaikuttam,Sivakasi-626123</a></b><div class="line"></div>
+        <b><a onclick="showcam()">💻Digital Campus</a></b>
+        <a href="appl.html"><button style="color: white;background-color: red;border-radius: 30px;border-style: groove;background-blend-mode: luminosity;margin-left: 550px;">Admission Open</button></a>s
+    </nav>
+    <header>
+         <div class="logo img">
+        <img src="clglogo.jpg">
+    </div>
+        <div class="heading">
+        <h1>Sri kaliswari College (Autonomous)</h1>
+    </div>
+    </header>
+    <nav>
+        <b><a onclick="showHOME()" style="margin-right: 200px;">HOME</a></b>
+        <b><a onclick="showABOUT()" style="margin-right: 200px;">ABOUT</a></b>
+        <b><a onclick="showACADEMICS()" style="margin-right: 200px;">ACADEMICS</a></b>
+        <b><a onclick="showGALLERYy()" style="margin-right: 200px;">GALLERY</a></b>
+        <b><a onclick="showCAMPUSLIFE()" style="margin-right: 200px;">CAMPUSLIFE</a></b>
+        <b><a onclick="showALUMINI()">ALLUMINI</a></b>
+    </nav>
+    <div class="body" id="display">
+        <p>Welcome to Sri Kaliswari College (Autonomous), a premier institution dedicated to academic excellence, discipline, and holistic development. Established with the vision of empowering students through quality education, the college provides a vibrant learning environment with experienced faculty, modern infrastructure, and diverse academic programs. The institution encourages innovation, leadership, and social responsibility, helping students achieve both personal and professional success. With a strong commitment to values, knowledge, and career growth, Sri Kaliswari College continues to shape talented individuals for a brighter future.
+<br><br>Sri Kaliswari College (Autonomous) also focuses on nurturing creativity, research skills, and practical knowledge through seminars, workshops, industrial visits, and extracurricular activities. The college offers a student-friendly atmosphere that motivates learners to explore their talents in academics, sports, cultural events, and community service. With well-equipped laboratories, a rich library, smart classrooms, and placement training programs, the institution prepares students to meet global challenges with confidence and professionalism. The college takes pride in producing responsible graduates who contribute positively to society and excel in various fields across the world.
+
+        </p></div>
+
+
+<div class="slider">
+
+    <div class="slides">
+
+        <img src="front.jpg" width="100px" height="150px">
+
+        <img src="mba.jpg" width="100px" height="150px">
+
+        <img src="ground.jpg" width="100px" height="150px">
+
+    </div>
+
+</div>
+<div class="footer">
+    <h3 style="color: red;">CONTACT</h3>&nbsp;&nbsp;
+    <p>📞9003304544<br>✉️skcedu@gamil.com<br>🌐www.skcedu.com</p>
+    &nbsp;&nbsp;<h3 style="color: red;">NAAC</h3>&nbsp;&nbsp;
+    <p>As one of the few NAAC accredited (A+ Grade) institutions in the region, Sri Kaliswari College is poised to become one among the premiere educational institutions in the country.<br> Thanks to the unceasing efforts of the trustees of Sri Kaliswari Trust, and the faculty, the college as a whole, is dedicated to raising the bar of infrastructure and elevating holistic education to international standards.</p>
+    <h3 style="color: red;">MISSION</h3>
+    <p>The mission of Sri Kaliswari College is to provide quality higher education that helps students grow academically, professionally, and morally.<br> Our college aims to develop critical thinking, communication, leadership, and technical skills among students so they can face global challenges with confidence.<br> We also focuses on value-based education by promoting human values, professional ethics, social responsibility, national integrity, and environmental awareness. <br>Through inclusive and student-centered learning, the institution strives to empower rural youth and shape them into talented individuals who contribute positively to society and the nation. </p>
+</div>
+<script>
+     
+    function showHOME(){
+      document.getElementById("display").innerHTML = `
+      
+      
+      
+    <br><p>🎗️Incepted in the year 2000 in Sivakasi, the college was expanded and moved to a larger campus in A- Meenakshipuram, seven kilmetres from Sivakasi, by 19th March, 2001. Recognised by the UGC, Sri Kaliswari College became autonomous in 2012.
+
+<br>🎗️SKC offers seventeen Undergraduate Programmes and nine Postgraduate Programmes.
+
+<br>🎗️The college has partnered with colleges, educational institutions, industries and companies to transfer recent insights on Industrial Practices and latest technologies to Faculty and Students.
+
+<br>🎗️SKC also offers its students several Certificate Courses, aimed at enhancing the employability of the students. Career Guidance Programme and Guidance for Competitive Examinations is regularly provided.
+
+<br>🎗️SKC is one of the few educational institutions in the region to provide a community college, where deserving students are given vocational training and education free of cost.
+
+<br>🎗️SKC’s campus is verdant, with lush greenery on the one hand, and every conceivable amenity for the students on the other. Excellent laboratories for each and every specialization, hi-tech audio visual rooms with hi-fidelity communication systems, a large auditorium that can accommodate over 3,000 people, multi-level library with seamless digital connectivity, and much more.
+
+<br>🎗️Since its inception, Sri Kaliswari College has forged a unique path in providing quality education for all.</p>`;
+    }
+    function showABOUT(){
+      document.getElementById("display").innerHTML = `
+      
+       <p>
+            Sri Kaliswari College is a well-known autonomous institution committed to providing 
+            quality education and shaping the future of students through academic excellence, 
+            discipline, and innovation. The college offers various undergraduate and postgraduate 
+            programs in arts, science,<br> commerce, and technology to help students achieve their 
+            career goals.
+        </p>
+
+        <p>
+            The institution focuses on creating a student-friendly learning environment with 
+            experienced faculty members, modern laboratories, digital classrooms, and a rich 
+            library facility. Along with academics, the college encourages students to participate 
+            in sports, cultural activities, seminars, workshops, and social service programs for 
+            overall personality development.
+        </p>
+
+        <p>
+            Sri Kaliswari College aims to empower students with knowledge, leadership qualities, 
+            moral values, and professional skills so that they can contribute positively to society 
+            and succeed in the global world.
+        </p>`;
+      
+      
+    }
+    function showACADEMICS(){
+      document.getElementById("display").innerHTML = `
+      
+<h2>Undergraduate Courses (UG)</h2>
+
+        <ul>
+            <li>B.Sc Computer Science</li>
+            <li>BCA</li>
+            <li>B.Com</li>
+            <li>BBA</li>
+            <li>B.A English</li>
+            <li>B.Sc Mathematics</li>
+        </ul>
+
+        <h2>Postgraduate Courses (PG)</h2>
+
+        <ul>
+            <li>M.Sc Computer Science</li>
+            <li>MCA</li>
+            <li>M.Com</li>
+            <li>MBA</li>
+            <li>M.A English</li>
+            <li>M.Sc Mathematics</li>
+        </ul>
+
+    </div>
+
+    <div class="footer">
+        <p>© 2026 Sri Kaliswari College</p>
+    </div>
+`;
+}
+</script>
+    
+
+    
+</body>
+</html>

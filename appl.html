@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          .container{
+            width:500px;
+            margin:30px auto;
+            padding:30px 35px;
+            background:white;
+            border:2px solid brown;
+            box-shadow:0 0 20px brown;
+          }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="font-family: 'Times New Roman', Times, serif;"><center>Application Form</center></h1>
+        <form action="submit.html" method="post">
+          <lable>Name</lable><br><br>
+            <input type="text" name="uname"><br><br>
+            <lable>DOB</lable><br><br>
+            <input type="date" name="dname"><br><br>
+            <lable>Mobile Number</lable><br><br>
+            <input type="tel" name="mname"><br><br>
+            <lable>EmailID</lable><br><br>
+            <input type="email" name="ename"><br><br>
+            <lable>Password</lable><br><br>
+            <input type="password" name="pname"><br><br>
+    <label>Gender</label><br><br>
+    <input type="radio" name="gender" value="Male"> Male
+    <input type="radio" name="gender" value="Female"> Female
+    <br><br>
+    <label>Skills</label><br><br>
+    <input type="checkbox" name="skill" value="HTML"> HTML
+    <input type="checkbox" name="skill" value="CSS"> CSS
+    <input type="checkbox" name="skill" value="JavaScript"> JavaScript
+    <br><br>
+    <label>Country</label><br><br>
+    <select name="country">
+      <option>India</option>
+      <option>USA</option>
+      <option>UK</option>
+      <option>Canada</option>
+    </select><br><br>
+    <label>Address</label><br><br>
+    <textarea name="address" rows="4" cols="30"></textarea>
+    <br><br>
+    <label>Upload Resume</label><br><br>
+    <input type="file" name="resume"><br><br>
+    <input type="submit" name="submit" value="submit">  
+        </form>
+        </div>
+</body>
+</html>
