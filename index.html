@@ -4,45 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .name{
-            color: blueviolet;
+</head>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right,   #1e3c72, #2a5298);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
         }
-        .header , img{
-                width: 43px;
-                height: 38px;
+
+        .login-container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0px 4px 15px pink;
+            width: 300px;
         }
-        .header{
-            gap: 200px;
+
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #4facfe;
+            border-style: double;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #00c6ff;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: #4facfe;
         }
     </style>
-</head>
 <body>
-    <button style="color: blue;">Submit</button>
-    <!-- <div class="name">
-        <h1>hello</h1>
-    <div>hello</div>
-    <div>hello</div>
-    <div>hello</div>
-    <div>hello</div>
-    <div>hello</div>
-    <div>hello</div>
-    <div>hello</div>
-    <script>
+    <div class="login-container">
+    <h2>Login</h2>
+    <form action="college.html" method="POST">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+    </form>
 
-    </script> -->
-
-
-    <div class="main ">
-        <div class="header" style="display: flex; background-color: brown;">
-            <img src="file:///C:/Users/S.Divya%20kala/OneDrive/Desktop/webgapp/logo1.jpg">
-            <h1>hello Workshop</h1>
-            <div class="nav" style="display: flex; gap: 10px;">
-                <a href="home.html">Home</a>
-                <a href="about.html">About</a>
-            </div>
-        </div>
+    <div class="footer">
+        <p>Don't have an account? <a href="#">Sign up</a></p>
     </div>
+</div>
 </body>
 </html>
