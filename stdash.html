@@ -81,7 +81,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 }
 
 .popup-content{
-    background:white;
+    background:rgb(232, 205, 205);
     width:70%;
     margin:80px auto;
     padding:25px;
@@ -102,22 +102,38 @@ table{
     width:100%;
     border-collapse:collapse;
     margin-top:20px;
+    border-style: double;
+    border-color: #090909;
 }
 
 th{
-    background:#1e3a5f;
+    background:#011836;
     color:white;
     padding:12px;
+    box-shadow: 0px 0px 10px black;
 }
 
 td{
     padding:10px;
-    text-align:center;
+    text-align:left;
     border-bottom:1px solid #ddd;
+    border-style: dashed;
 }
 
 tr:hover{
     background:#f1f1f1;
+}
+.graph-container{
+    display: flex;
+    justify-content: center; 
+    align-items: center;      
+    margin-top: 20px;
+    box-shadow: 0px opx 10px darkblue;
+}
+
+.graph-container img{
+    width: 650px;      
+    height: 700px;    
 }
 
 </style>
@@ -153,6 +169,11 @@ tr:hover{
     <div class="card" onclick="openPopup('otherPopup')">
         <h2>Other Programmes</h2>
         <div class="number">5</div>
+
+    </div>
+    <div class="card" onclick="openPopup('libPopup')">
+        <h2>Library Books</h2>
+        <div class="number">34000</div>
 
     </div>
 </div>
@@ -283,18 +304,140 @@ tr:hover{
 
         <table>
             <tr>
-                <th>Department count</th>
+                <th>Year</th>
                 <th>total students</th>
             </tr>
 
             <tr>
-                <td>16</td>
+                <td>2016</td>
+                <td>1000</td>
+            </tr>
+             <tr>
+                <td>2017</td>
+                <td>1500</td>
+            </tr>
+             <tr>
+                <td>2018</td>
+                <td>2200</td>
+            </tr>
+             <tr>
+                <td>2019</td>
+                <td>2500</td>
+            </tr>
+             <tr>
+                <td>2020</td>
+                <td>3000</td>
+            </tr>
+             <tr>
+                <td>2021</td>
+                <td>3800</td>
+            </tr>
+             <tr>
+                <td>2022</td>
+                <td>4000</td>
+            </tr>
+             <tr>
+                <td>2023</td>
+                <td>4600</td>
+            </tr>
+             <tr>
+                <td>2024</td>
+                <td>5000</td>
+            </tr> <tr>
+                <td>2025</td>
+                <td>5100</td>
+            </tr>
+             <tr>
+                <td>2026</td>
                 <td>6000</td>
             </tr>
         </table>
 
     </div>
 
+</div>
+
+<div class="popup" id="otherPopup">
+
+    <div class="popup-content">
+
+        <span class="close" onclick="closePopup('otherPopup')">&times;</span>
+
+        <h2 align="center">Other Programmes</h2>
+
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>staffs</th>
+            </tr>
+
+            <tr>
+                <td>Sports</td>
+                <td>10</td>
+            </tr>
+             <tr>
+                <td>Dance</td>
+                <td>5</td>
+            </tr>
+             <tr>
+                <td>Singing</td>
+                <td>3</td>
+            </tr>
+             <tr>
+                <td>Karate</td>
+                <td>2</td>
+            </tr>
+             <tr>
+                <td>Skating</td>
+                <td>8</td>
+            </tr>
+        </table>
+
+    </div>
+
+</div>
+<div class="popup" id="libPopup">
+
+    <div class="popup-content">
+
+        <span class="close" onclick="closePopup('libPopup')">&times;</span>
+
+        <h2 align="center">Library Books</h2>
+
+        <table>
+            <tr>
+                <th>Catogery</th>
+                <th></th>
+            </tr>
+
+            <tr>
+                <td>Sports</td>
+                <td>10</td>
+            </tr>
+             <tr>
+                <td>Dance</td>
+                <td>5</td>
+            </tr>
+             <tr>
+                <td>Singing</td>
+                <td>3</td>
+            </tr>
+             <tr>
+                <td>Karate</td>
+                <td>2</td>
+            </tr>
+             <tr>
+                <td>Skating</td>
+                <td>8</td>
+            </tr>
+        </table>
+
+    </div>
+
+</div>
+<br>
+<div class="graph-container">
+<img src="copy.png">
 </div>
 
 <script>
