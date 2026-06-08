@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-       nav
+</head>
+<style>
+    nav
     {
         display: flex;
         background-color: rgb(2, 2, 57);
@@ -63,7 +64,7 @@
     height:20px;
     margin:0 20px;
    }
-    .body
+   .body
    {
     display: flex;
     padding-top: 10px;
@@ -71,15 +72,9 @@
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
    }
-          .container{
-            width:500px;
-            margin:30px auto;
-            padding:30px 35px;
-            background:white;
-            border:2px solid brown;
-            box-shadow:0 0 20px brown;
-          }
-          .bcon
+  
+
+ .bcon
          {
           padding: 100px;
           text-align: center;
@@ -98,20 +93,45 @@
       text-shadow: 0px 0px 20px black;  
        margin-top: 0px;    
          }
-         footer{
+         .gallery{
+    width:90%;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery-item{
+    overflow:hidden;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.gallery-item img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    transition:0.5s;
+}
+
+.gallery-item:hover img{
+    transform:scale(1.1);
+}
+
+footer{
     background:#003366;
     color:white;
     text-align:center;
     padding:15px;
     margin-top:30px;
 }
-        </style>
-</head>
+  
+</style>
 <body>
-   <nav>
+     <nav>
         <b><a onclick="showmail()">✉️skcedu@gmail.com</a></b><div class="line"></div>
         <b><a onclick="shownum()">📞9003304544</a></b><div class="line"></div>
-        <b><a onclick="showloc()">📍Aanaikuttam,Sivakasi-626123</a></b><div class="line"></div>
+        <b><a onclick="showloc()">📍Thirunagar,Madurai-626123</a></b><div class="line"></div>
         <b><a onclick="showcam()">💻Digital Campus</a></b>
         <a href="appl.html"><button style="color: white;background-color: red;border-radius: 30px;border-style: groove;background-blend-mode: luminosity;margin-left: 550px;">Admission Open</button></a>s
     </nav>
@@ -120,7 +140,7 @@
         <img src="clglogo.jpg">
     </div>
         <div class="heading">
-        <h1>Sri kaliswari College (Autonomous)</h1>
+        <h1>Green Apple College of Arts and Science</h1>
     </div>
     </header>
     <nav>
@@ -129,47 +149,55 @@
         <b><a href="academic.html" style="text-decoration: none;margin-right: 200px;">ACADEMICS</a></b>
         <b><a href="gallery.html" style="text-decoration: none;margin-right: 200px;">GALLERY</a></b>
         <b><a href="camp.html" style="text-decoration: none;margin-right: 200px;">CAMPUSLIFE</a></b>
-        <b><a href="alu.html" style="text-decoration: none;">CONTACT</a></b>
+        <b><a href="alu.html" style="text-decoration: none;">Contact</a></b>
     </nav>
-    <div class="container">
-        <h1 style="font-family: 'Times New Roman', Times, serif;"><center>Application Form</center></h1>
-        <form action="submit.html" method="post">
-          <lable>Name</lable><br><br>
-            <input type="text" name="uname"><br><br>
-            <lable>DOB</lable><br><br>
-            <input type="date" name="dname"><br><br>
-            <lable>Mobile Number</lable><br><br>
-            <input type="tel" name="mname"><br><br>
-            <lable>EmailID</lable><br><br>
-            <input type="email" name="ename"><br><br>
-            <lable>Password</lable><br><br>
-            <input type="password" name="pname"><br><br>
-    <label>Gender</label><br><br>
-    <input type="radio" name="gender" value="Male"> Male
-    <input type="radio" name="gender" value="Female"> Female
-    <br><br>
-    <label>Skills</label><br><br>
-    <input type="checkbox" name="skill" value="HTML"> HTML
-    <input type="checkbox" name="skill" value="CSS"> CSS
-    <input type="checkbox" name="skill" value="JavaScript"> JavaScript
-    <br><br>
-    <label>Country</label><br><br>
-    <select name="country">
-      <option>India</option>
-      <option>USA</option>
-      <option>UK</option>
-      <option>Canada</option>
-    </select><br><br>
-    <label>Address</label><br><br>
-    <textarea name="address" rows="4" cols="30"></textarea>
-    <br><br>
-    <label>Upload Resume</label><br><br>
-    <input type="file" name="resume"><br><br>
-    <input type="submit" name="submit" value="submit">  
-        </form>
-        </div>
-        <footer>
-    © 2026 Sri Kaliswari College (Autonomous) | Contact Us
+   <div class="gallery">
+
+    <div class="gallery-item">
+        <img src="clg1.jpg" alt="Campus">
+    </div>
+
+    <div class="gallery-item">
+        <img src="clg2.jpg" alt="Library">
+    </div>
+
+    <div class="gallery-item">
+        <img src="clg3.jpeg" alt="Lab">
+    </div>
+
+    <div class="gallery-item">
+        <img src="clg4.jpg" alt="Seminar">
+    </div>
+
+    <div class="gallery-item">
+        <img src="clg5.jpg" alt="Sports">
+    </div>
+
+    <div class="gallery-item">
+        <img src="clg6.jpeg" alt="Cultural Event">
+    </div>
+
+    <div class="gallery-item">
+        <img src="clg7.jpeg" alt="Graduation">
+    </div>
+
+    <div class="gallery-item">
+        <img src="clg8.jpeg" alt="Students">
+    </div>
+    
+     <div class="gallery-item">
+        <img src="clg9.jpg" alt="Students">
+    </div>
+     <div class="gallery-item">
+        <img src="clg10.jpeg" alt="Students">
+    </div>
+</div>
+
+   <footer>
+    © 2026 Green Apple College of Arts and Science | Contact Us
 </footer>
+
+
+
 </body>
 </html>
